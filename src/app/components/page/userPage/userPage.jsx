@@ -12,7 +12,7 @@ const UserPage = ({ userId }) => {
     }, []);
 
     const handleClick = () => {
-        history.push("/change");
+        history.push(`${userId}/edit`);
     };
 
     if (user) {
