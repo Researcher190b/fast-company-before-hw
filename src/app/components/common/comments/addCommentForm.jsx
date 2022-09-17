@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import API from "../../../api";
 import SelectField from "../form/selectField";
-import TextAreaField from "../form/textAreaFIeld";
+import TextAreaField from "../form/textAreaField";
 import { validator } from "../../../utils/validator";
 import PropTypes from "prop-types";
 

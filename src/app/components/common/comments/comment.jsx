@@ -47,7 +47,8 @@ const Comment = ({
                                             {user && user.name}{" "}
                                             <span className="small">
                                                 -{" "}
-                                                {displayDate(edited || created)}
+                                                {/* {displayDate(edited || created)} */}
+                                                {displayDate(created)}
                                             </span>
                                         </p>
                                         <button
