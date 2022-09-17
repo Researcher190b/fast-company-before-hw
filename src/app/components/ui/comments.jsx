@@ -2,7 +2,8 @@ import { orderBy } from "lodash";
 import React, { useEffect, useState } from "react";
 import api from "../../api";
 import { useParams } from "react-router";
-import CommentsList, { AddCommentForm } from "../common/comments";
+import AddCommentsForm from "../common/comments/addCommentForm";
+import CommentsList from "../common/comments/commentsList";
 
 const Comments = () => {
     const { userId } = useParams();
@@ -33,7 +34,7 @@ const Comments = () => {
             <div className="card mb-2">
                 {" "}
                 <div className="card-body">
-                    <AddCommentForm onSubmit={handleSubmit} />
+                    <AddCommentsForm onSubmit={handleSubmit} />
                 </div>
             </div>
             {sortedComments.length > 0 && (
